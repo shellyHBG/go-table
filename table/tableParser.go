@@ -6,11 +6,11 @@ import (
 	"strings"
 )
 
-func Parse(name, data string) (result table, err error) {
+func Parse(name, data string) (result Table, err error) {
 	fmt.Println("[table] " + name + " starts to parse.")
 
 	// initialize
-	result = table{name, make(map[string]map[string]string)}
+	result = Table{name, make(map[string]map[string]string)}
 	err = nil
 
 	// string split
