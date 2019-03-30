@@ -1,0 +1,11 @@
+﻿int	string	string	string	string	string	
+Key	TW	EN	CH	KR	TH	
+1000	系統訊息	System message	系统讯息	System message	System message	
+1001	連線中斷	Connect error	联机中断	Connect error	Connect error	
+1002	確定	Confirm	确定	Confirm	Confirm	
+1003	取消	Cancel	取消	Cancel	Cancel	
+1004	當前版本未開放	Error version	当前版本未开放	Error version	Error version	
+1005	請至商店更新版本	Please go to store download new version	请至商店更新版本	Please go to store download new version	Please go to store download new version	
+1006	請輸入暱稱	Please enter a nickname	请输入昵称	Please enter a nickname	Please enter a nickname	
+1007	請輸入暱稱	Please enter a nickname	请输入昵称	Please enter a nickname	Please enter a nickname	
+1008	資源下載失敗	Download failed	资源下载失败	Download failed	Download failed	
