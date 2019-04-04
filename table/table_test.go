@@ -13,7 +13,7 @@ var loadedTable Table
 var totalOk = 3
 var oKCount = 0
 
-// run test by the order of function defined in code
+// run test by the order of function declared/defined in code
 func TestParse(t *testing.T) {
 	dataBytes, err := ioutil.ReadFile(filePath + fileName)
 	if err != nil {
