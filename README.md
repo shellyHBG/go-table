@@ -42,7 +42,7 @@ Build an executable file using:
 ```
 > go build 
 ```
-Run testing under "table" foler:
+Run testing under the "table" foler:
 ```
 > go test -v
 ```
