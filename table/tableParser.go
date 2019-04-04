@@ -2,12 +2,11 @@ package table
 
 import (
 	"errors"
-	"fmt"
 	"strings"
 )
 
 func Parse(name, data string) (result Table, err error) {
-	fmt.Println("[table] " + name + " starts to parse.")
+	//fmt.Println("[table] " + name + " starts to parse.")
 
 	// initialize
 	result = Table{name, make(map[string]map[string]string)}

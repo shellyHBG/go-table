@@ -1,15 +1,17 @@
-package main
+package table
 
 import (
+	"fmt"
 	"io/ioutil"
 	"testing"
-
-	"../table"
 )
 
 var filePath = "../"
 var fileName = "LocalContent.txt"
-var loadedTable table.Table
+var loadedTable Table
+
+var totalOk = 3
+var oKCount = 0
 
 // run test by the order of function defined in code
 func TestParse(t *testing.T) {
@@ -20,7 +22,7 @@ func TestParse(t *testing.T) {
 
 	data := string(dataBytes)
 
-	loadedTable, err = table.Parse(fileName, data)
+	loadedTable, err = Parse(fileName, data)
 	if err != nil {
 		t.Errorf("%v parse error: %v", fileName, err)
 	}
@@ -30,6 +32,9 @@ func TestParse(t *testing.T) {
 	if loadedTable.GetName() != fileName {
 		t.Errorf("table name: %v is not equal to file name: %v", loadedTable.GetName(), fileName)
 	}
+
+	oKCount++
+	fmt.Println("TestParse OK. ", oKCount, "/", totalOk)
 }
 
 func TestGet(t *testing.T) {
@@ -55,6 +60,9 @@ func TestGet(t *testing.T) {
 	if loadedTable.Get("666", "lala") != "" {
 		t.Errorf("%v Get 666, lala is %v NOT empty", fileName, loadedTable.Get("666", "lala"))
 	}
+
+	oKCount++
+	fmt.Println("TestGet OK. ", oKCount, "/", totalOk)
 }
 
 func TestGetAll(t *testing.T) {
@@ -112,4 +120,7 @@ func TestGetAll(t *testing.T) {
 	if test["TW"] != "" {
 		t.Errorf("%v GetAll 666 [\"TW\"] is %q NOT empty", fileName, test["TW"])
 	}
+
+	oKCount++
+	fmt.Println("TestGetAll OK. ", oKCount, "/", totalOk)
 }
