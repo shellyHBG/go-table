@@ -34,14 +34,7 @@ func main() {
 
 	// 3. test
 	fmt.Printf("GetAll > %q\n", table.GetAll("1000"))
-	fmt.Printf("GetAll > %q\n", table.GetAll("-52"))
-	fmt.Printf("GetAll > %q\n", table.GetAll("666"))
 	//fmt.Printf("GetAll > %q\n", table.GetAll(1000))  // error: cannot use 1000 (type int) as type string in argument to table.GetAll
 
 	fmt.Printf("Get > %v\n", table.Get("1000", "EN"))
-	fmt.Printf("Get > %v\n", table.Get("1000", "yoyo"))
-	fmt.Printf("Get > %v\n", table.Get("-52", "CH"))
-	fmt.Printf("Get > %v\n", table.Get("-52", "wuwu"))
-	fmt.Printf("Get > %v\n", table.Get("666", "TH"))
-	fmt.Printf("Get > %v\n", table.Get("666", "lala"))
 }

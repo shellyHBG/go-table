@@ -5,6 +5,10 @@ type Table struct {
 	content map[string]map[string]string
 }
 
+func (t *Table) GetName() string {
+	return t.name
+}
+
 func (t *Table) Get(key, subKey string) string {
 	return t.content[key][subKey]
 }
