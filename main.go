@@ -16,14 +16,14 @@ func main() {
 	// ReadFile reads the file named by filename and returns the contents.
 	// A successful call returns err == nil, not err == EOF.
 	// Because ReadFile reads the whole file, it does not treat an EOF from Read as an error to be reported.
-	data_bytes, err := ioutil.ReadFile("LocalContent.txt")
+	dataBytes, err := ioutil.ReadFile("LocalContent.txt")
 	if err != nil {
 		fmt.Println(err)
 	}
-	//fmt.Println(data_bytes)
+	//fmt.Println(dataBytes)
 
 	// force type converting from byte[] to string
-	data := string(data_bytes)
+	data := string(dataBytes)
 	//fmt.Println(data)
 
 	// 2. parse data
