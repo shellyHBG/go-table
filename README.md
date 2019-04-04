@@ -42,6 +42,14 @@ Build an executable file using:
 ```
 > go build 
 ```
+Run testing under "table" foler:
+```
+> go test -v
+```
+or testing with showing the coverage:
+```
+> go test -v -cover
+```
 
 ## Authors
 By shellyHBG
